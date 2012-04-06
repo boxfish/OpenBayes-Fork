@@ -133,7 +133,8 @@ class Table:
         self.cpt = numpy.ones(self.shape, dtype='Float32')
 
     def setValues(self, values):###X ???self.sizes is not a atribute, change to self.shape
-        self.cpt = numpy.array(values, dtype='Float32').reshape(self.sizes)
+        print "SELF.SIZES?!"
+        self.cpt = numpy.array(values, dtype='Float32').reshape(self.shape)
     #==================================
     # Indexing
     def __getitem__(self, index):
